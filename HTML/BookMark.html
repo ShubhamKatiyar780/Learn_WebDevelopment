@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            background-color: aqua;
+        }
+        section {
+            height: 500px;
+            border: 2px solid black;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-image: url("microsoft-logo.jpg");
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Page Navigation using Bookmarks</h1>
+    <ul>
+        <li><a href="#Section1">Go to Section 1</a></li>
+        <li><a href="#Section2">Go to Section 2</a></li>
+        <li><a href="#Section3">Go to Section 3</a></li>
+    </ul>
+    <section id="Section1">
+        <h2>Section 1</h2>
+        <p>This is the content of Section 2.</p>
+        <a href="#h1">Back to Top</a>
+    </section>
+    <section id="Section2">
+        <h2>Section 2</h2>
+        <p>This is the content of Section 2.</p>
+        <a href="#h1">Back to Top</a>
+    </section>
+    <section id="Section3">
+        <h2>Section 3</h2>
+        <p>This is the content of Section 3.</p>
+        <a href="#h1">Back to Top</a>
+    </section>
+</body>
+</html>
