@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object_display</title>
+</head>
+<body>
+    <h3 id="demo"></h3>
+    <h3 id="demo1"></h3>
+    <h3 id="demo2"></h3>
+    <h3 id="demo3"></h3>
+    <h3 id="demo4"></h3>
+    <h3 id="demo5"></h3>
+</body>
+<script>
+const persons = {
+  name: "Shubham",
+  age: 30,
+  city: "Kanpur"
+};
+// Display Properties
+document.getElementById("demo").innerHTML = persons; // [object Object]
+document.getElementById("demo1").innerHTML = persons.name + ", " + persons.age + ", " + persons.city;
+
+// Using Object.values()
+const collectValues = Object.values(persons);
+document.getElementById("demo2").innerHTML = collectValues;
+
+// Build a Text
+let text = "";
+for (let x in persons) {
+  text += persons[x] + " ";
+};
+document.getElementById("demo3").innerHTML = text;
+
+// Using JSON.stringify()
+// JS objects can be converted to a string with JSON method JSON.stringify().
+let myString = JSON.stringify(persons);
+document.getElementById("demo4").innerHTML = myString;
+
+// Using Object.entries()
+const fruits = {Bananas:300, Oranges:200, Apples:500}; 
+let textt = "";
+for (let [fruit, amount] of Object.entries(fruits)) {
+  textt += fruit + ": " + amount + "<br>";
+};
+document.getElementById("demo5").innerHTML = textt;
+</script>
+</html>
+
