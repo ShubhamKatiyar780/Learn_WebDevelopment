@@ -55,4 +55,3 @@ const myObj = {
 }
 console.log(myObj.cars[0]['models'][1]);
 console.log(myObj.cars[2]['models'][0]);
-// array
