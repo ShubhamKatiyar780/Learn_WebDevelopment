@@ -54,4 +54,8 @@ const myObj = {
   ]
 }
 console.log(myObj.cars[0]['models'][1]);
+<<<<<<< HEAD
 console.log(myObj.cars[2]['models'][0]);
+=======
+console.log(myObj.cars[2]['models'][0]);
+>>>>>>> 64be62d0a7d8162d78b1f77c2a0229bce2f51f6e
